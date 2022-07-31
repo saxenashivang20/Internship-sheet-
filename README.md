@@ -1,1 +1,1 @@
-Questions solved in Leetcode and GFG 
+Questions solved on Leetcode 
