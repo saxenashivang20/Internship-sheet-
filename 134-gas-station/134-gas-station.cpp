@@ -2,7 +2,8 @@ class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         int pos = -1, curr = 0, total = 0;
-        for (int i =0;i<gas.size();i++){
+        int n = gas.size();
+        for (int i =0;i<n;i++){
             int diff = gas[i] - cost[i];
             
             curr+= diff;
