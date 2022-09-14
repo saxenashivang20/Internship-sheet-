@@ -5,9 +5,8 @@ public:
         int n = gas.size();
         for (int i =0;i<n;i++){
             int diff = gas[i] - cost[i];
-            
-            curr+= diff;
-            total+=diff;
+            curr += diff;
+            total += diff;
             if(curr<0){
                 curr = 0;
                 pos = i;
@@ -16,7 +15,6 @@ public:
         if(total>=0){
             return pos +1;
         }
-        return -1;
-            
+        return -1;    
     }
 };
